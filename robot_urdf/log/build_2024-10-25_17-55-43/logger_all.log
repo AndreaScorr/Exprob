@@ -1,0 +1,106 @@
+[0.192s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'robot_urdf']
+[0.192s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1f7ad527c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['robot_urdf'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1f7ad527c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1f7ad52fa0>)
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.318s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/experimental_robotics/src/robot_urdf'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'robot_urdf'
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.342s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /root/experimental_robotics/install
+[0.343s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 296 installed packages in /opt/ros/foxy
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'robot_urdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/robot_urdf/build/robot_urdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/robot_urdf/install/robot_urdf', 'merge_install': False, 'path': '/root/experimental_robotics/src/robot_urdf', 'symlink_install': False, 'test_result_base': None}
+[0.420s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.421s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.421s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/experimental_robotics/src/robot_urdf' with build type 'ament_cmake'
+[0.421s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/experimental_robotics/src/robot_urdf'
+[0.423s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/robot_urdf/install/robot_urdf
+[1.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/robot_urdf/install/robot_urdf
+[1.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/robot_urdf/build/robot_urdf -- -j12 -l12
+[1.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/robot_urdf/build/robot_urdf -- -j12 -l12
+[1.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/robot_urdf/build/robot_urdf
+[1.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_urdf)
+[1.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/robot_urdf/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/robot_urdf/build/robot_urdf
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf' for CMake module files
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf' for CMake config files
+[1.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_urdf', 'cmake_prefix_path')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.ps1'
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.dsv'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.sh'
+[1.258s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/bin'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/lib/pkgconfig/robot_urdf.pc'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/lib/python3.8/site-packages'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/bin'
+[1.259s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.ps1'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.dsv'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.sh'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.bash'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.zsh'
+[1.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/colcon-core/packages/robot_urdf)
+[1.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_urdf)
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf' for CMake module files
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf' for CMake config files
+[1.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_urdf', 'cmake_prefix_path')
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.ps1'
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.dsv'
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.sh'
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/bin'
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/lib/pkgconfig/robot_urdf.pc'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/lib/python3.8/site-packages'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/bin'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.dsv'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.sh'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.bash'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.zsh'
+[1.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/colcon-core/packages/robot_urdf)
+[1.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.282s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.287s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.287s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.287s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.287s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.299s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[1.302s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/robot_urdf/install/local_setup.ps1'
+[1.304s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/experimental_robotics/src/robot_urdf/install/_local_setup_util_ps1.py'
+[1.305s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/robot_urdf/install/setup.ps1'
+[1.306s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/robot_urdf/install/local_setup.sh'
+[1.306s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/experimental_robotics/src/robot_urdf/install/_local_setup_util_sh.py'
+[1.306s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/robot_urdf/install/setup.sh'
+[1.307s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/robot_urdf/install/local_setup.bash'
+[1.308s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/robot_urdf/install/setup.bash'
+[1.309s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/robot_urdf/install/local_setup.zsh'
+[1.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/robot_urdf/install/setup.zsh'

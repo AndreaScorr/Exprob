@@ -1,0 +1,98 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/experimental_robotics/src/robot_urdf/build/robot_urdf
+-- Install configuration: ""
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/__pycache__
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/__pycache__/gazebo.launch.cpython-38.pyc
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/__pycache__/gazebo_arm.launch.cpython-38.pyc
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/gazebo.launch.py
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/gazebo_arm.launch.py
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//launch/gazebo_aruco.launch.py
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf/m2wr_arm2.xacro
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf/robot4.xacro
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf/materials.xacro
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf/robot4.gazebo
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//urdf/m2wr_arm2.gazebo
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/rviz.rviz
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/config_motors.yaml
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/config.yaml
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/local_setup.sh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/local_setup.bash
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/.colcon_install_layout
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/setup.ps1
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/setup.sh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/setup.bash
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/_local_setup_util_ps1.py
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/COLCON_IGNORE
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/setup.zsh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/local_setup.zsh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/_local_setup_util_sh.py
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/install/local_setup.ps1
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/build
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/build/.built_by
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/build/COLCON_IGNORE
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/latest
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/COLCON_IGNORE
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/build_2024-10-25_13-57-43
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/build_2024-10-25_13-57-43/logger_all.log
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/build_2024-10-25_13-57-43/events.log
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//config/log/latest_build
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/world5Box.world
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/new_world
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/new_world/model.config
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/new_world/model.sdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/newWorld.world
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/newWorld.world/model.config
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/newWorld.world/model.sdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf//worlds/aruco_test.world
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/ament_index/resource_index/package_run_dependencies/robot_urdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/ament_index/resource_index/parent_prefix_path/robot_urdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/environment/ament_prefix_path.sh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/environment/ament_prefix_path.dsv
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/environment/path.sh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/environment/path.dsv
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/local_setup.bash
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/local_setup.sh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/local_setup.zsh
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/local_setup.dsv
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.dsv
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/ament_index/resource_index/packages/robot_urdf
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/cmake/robot_urdfConfig.cmake
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/cmake/robot_urdfConfig-version.cmake
+-- Installing: /root/experimental_robotics/src/robot_urdf/install/robot_urdf/share/robot_urdf/package.xml
