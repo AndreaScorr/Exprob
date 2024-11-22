@@ -27,7 +27,7 @@ class TwistPublisherNode(Node):
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
     def listener_callback(self, msg):
             global flag
-            self.get_logger().info(f'Received: {msg.data}')
+            #self.get_logger().info(f'Received: {msg.data}')
             if msg.data:
                 flag=True
             else:

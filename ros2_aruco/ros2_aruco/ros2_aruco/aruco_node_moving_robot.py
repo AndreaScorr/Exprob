@@ -120,7 +120,7 @@ class ArucoNode(rclpy.node.Node):
         height_img, width_img = cv_image.shape[:2]  # calculate the image dimension
         center_x, center_y = width_img / 2, height_img / 2  # find the center of the image
 
-        tolerance = 0.4
+        tolerance = 0.3
         tol_x = width_img * tolerance / 2
         tol_y = height_img * tolerance / 2
         markers = ArucoMarkers()
@@ -158,8 +158,8 @@ class ArucoNode(rclpy.node.Node):
                         if marker_id > 0 and marker_id < 40:
                             self.box_marker_dict.update({str(marker_id): orientation_q})
                             self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items()))
-                            print(self.box_marker_dict.keys())
-
+                            #print(self.box_marker_dict.keys())
+                            self.get_logger().info(f'Received: {self.box_marker_dict.keys()}')
                             img_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8")
                             self.image_pub.publish(img_msg)
 

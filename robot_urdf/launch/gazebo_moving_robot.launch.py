@@ -65,7 +65,7 @@ def generate_launch_description():
         spawn_entity,
         camera_controller,
         moving_robot,
-        #aruco_node,
+        aruco_node,
         ExecuteProcess(
             cmd=['gazebo', '--verbose',world5Box_path, '-s', 'libgazebo_ros_factory.so'],
             output='screen'),
