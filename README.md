@@ -4,7 +4,7 @@ Andrea Scorrano
 id: 6463777
 
 Has been developed the assignment in two different packages, for the physical implementation (robot model, configuration files, urdfs file and launch files) the package is robot_urdf.
-For nodes implementation like ( moving_robot, aruco nodes etc...) the packag is ros2_aruco
+For nodes implementation like ( moving_robot, aruco nodes etc...) the package is ros2_aruco
  
 
 Running
@@ -26,6 +26,7 @@ root@ab7d7c31fa8a:~/experimental_robotics# ros2 run ros2_aruco aruco_node_moving
 ```
 
 ## Flow Charts ##
+In both case the logic is the same. The robot will move arount itself, detect de marker and update the dictionary with the id and the position that he get from the odom topic or from the position that we send to the controller. 
 
 ### First Part Moving only the robot ###
 ![alt text](https://github.com/AndreaScorr/Exprob/blob/main/Movin_Robot.drawio.png?raw=true)
@@ -34,6 +35,8 @@ root@ab7d7c31fa8a:~/experimental_robotics# ros2 run ros2_aruco aruco_node_moving
 
 
 ### Second Part Moving only the camera ###
+
+The camera has been controlled by position.
 
 ![alt text](https://github.com/AndreaScorr/Exprob/blob/main/Moving_Camera.drawio.png?raw=true)
 
