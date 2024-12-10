@@ -103,7 +103,7 @@ class ArucoNode(rclpy.node.Node):
         self.distortion = np.array(self.info_msg.d)
         self.destroy_subscription(self.info_sub)
 
-    def orientation_and_position_callback(self, msg):
+    def orientation_and_position_callback(self, msg): #callback used to estimate the orientation from the odom
         global orientation_q
         orientation_q = msg.pose.pose.orientation
 
@@ -120,7 +120,7 @@ class ArucoNode(rclpy.node.Node):
         height_img, width_img = cv_image.shape[:2]  # calculate the image dimension
         center_x, center_y = width_img / 2, height_img / 2  # find the center of the image
 
-        tolerance = 0.3
+        tolerance = 0.3 #tolerance of 30% of the images this will be used to generate a "imaginary" square around the images, when the center of the aruco marker will stay in this tolerance we will get the marker in the middle
         tol_x = width_img * tolerance / 2
         tol_y = height_img * tolerance / 2
         markers = ArucoMarkers()
@@ -140,30 +140,30 @@ class ArucoNode(rclpy.node.Node):
 
         if marker_ids is not None:
             for marker_corners, marker_id in zip(corners, marker_ids):
-                corners = marker_corners.reshape((4, 2))
-                (topLeft, topRight, bottomRight, bottomLeft) = corners
+                corners = marker_corners.reshape((4, 2)) #get the corners from the marker
+                (topLeft, topRight, bottomRight, bottomLeft) = corners 
 
                 topRight = (int(topRight[0]), int(topRight[1]))
                 bottomRight = (int(bottomRight[0]), int(bottomRight[1]))
                 bottomLeft = (int(bottomLeft[0]), int(bottomLeft[1]))
                 topLeft = (int(topLeft[0]), int(topLeft[1]))
 
-                cX = int((topLeft[0] + bottomRight[0]) / 2.0)
-                cY = int((topLeft[1] + bottomRight[1]) / 2.0)
-                cv2.putText(cv_image, str(marker_id), (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-                cv2.circle(cv_image, (cX, cY), 10, (0, 0, 255), 2)
+                cX = int((topLeft[0] + bottomRight[0]) / 2.0) #center on x axis of the image
+                cY = int((topLeft[1] + bottomRight[1]) / 2.0) #center on y axis of the image
+                cv2.putText(cv_image, str(marker_id), (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2) #insert the text on the images with the id
+                cv2.circle(cv_image, (cX, cY), 10, (0, 0, 255), 2) #insert the circle on the images
 
-                if (center_x - tol_x <= cX <= center_x + tol_x) and (center_y - tol_y <= cY <= center_y + tol_y):
-                    if (str(marker_id) not in self.box_marker_dict) and (len(marker_id) == 1):
-                        if marker_id > 0 and marker_id < 40:
-                            self.box_marker_dict.update({str(marker_id): orientation_q})
-                            self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items()))
+                if (center_x - tol_x <= cX <= center_x + tol_x) and (center_y - tol_y <= cY <= center_y + tol_y): #check if the center of the aruco marker is in the "imaginary square"
+                    img_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8") #create the bridge
+                    self.image_pub.publish(img_msg) #publish the image
+                    if (str(marker_id) not in self.box_marker_dict) and (len(marker_id) == 1): #check if the marker detected is one and that not already present in the dictionary
+                        if marker_id > 0 and marker_id < 40: #additional check to avoid wrong numbers in the identification (somethimes appeared 1043 or similar numbers)
+                            self.box_marker_dict.update({str(marker_id): orientation_q}) #update the dictionary with key the marker id and values the position of the robot (used for future improvement)
+                            self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items())) #sort the dictionary by id
                             #print(self.box_marker_dict.keys())
-                            self.get_logger().info(f'Received: {self.box_marker_dict.keys()}')
-                            img_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8")
-                            self.image_pub.publish(img_msg)
-
-            if len(self.box_marker_dict) == 5:
+                            self.get_logger().info(f'Received: {self.box_marker_dict.keys()}') #log of the order dictionary
+                            
+            if len(self.box_marker_dict) == 5: #when he found all the markers he stop
                 msg = Bool()
                 msg.data = True
                 self.publisherMovement.publish(msg)
@@ -182,4 +182,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

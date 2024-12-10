@@ -25,7 +25,7 @@ setup(
             'aruco_node_red_circle =ros2_aruco.aruco_node_red_circle:main',
             'aruco_node_moving_robot = ros2_aruco.aruco_node_moving_robot:main',
             'moving_robot = ros2_aruco.moving_robot:main',
-            'temp = ros2_aruco.temp:main'
+            'aruco_node_moving_camera = ros2_aruco.aruco_node_moving_camera:main'
         ],
     },
 )

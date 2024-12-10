@@ -10,12 +10,14 @@ class TwistPublisherNode(Node):
     def __init__(self):
         super().__init__('twist_publisher')
         
-        # Crea il publisher per il topic /cmd_vel
-        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)  # 10 è la coda dei messaggi
+        # Create the publisher on the topic cmd_vel
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)  
         
-        # Imposta la frequenza desiderata in Hz
+        # Set the desired frequency
         self.frequency = 10.0  # 10 Hz
-        self.timer_period = 1.0 / self.frequency  # Periodo del timer in secondi (0.1 secondi per 10 Hz)
+        self.timer_period = 1.0 / self.frequency  
+        
+        #create subscription to get the flag value from the topic /stop_flag
         self.subscription = self.create_subscription(
             Bool,
             '/stop_flag',
@@ -23,9 +25,9 @@ class TwistPublisherNode(Node):
             10
         )
         
-        # Crea il timer per chiamare il callback alla frequenza desiderata
+        # Create the timer 
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
-    def listener_callback(self, msg):
+    def listener_callback(self, msg): #call_BackFunction to update the flag 
             global flag
             #self.get_logger().info(f'Received: {msg.data}')
             if msg.data:
@@ -33,7 +35,7 @@ class TwistPublisherNode(Node):
             else:
                 flag=False
     
-    def timer_callback(self):
+    def timer_callback(self): #When the stop_flag is true this callback will stop the motion  
         # Crea e pubblica il messaggio Twist
         twist_msg = Twist()
         if flag: #stop flag is true?
@@ -42,17 +44,17 @@ class TwistPublisherNode(Node):
             twist_msg.linear.z  = 0.0
             twist_msg.angular.x = 0.0
             twist_msg.angular.y = 0.0
-            twist_msg.angular.z = 0.0  # Ruota sull'asse Z
+            twist_msg.angular.z = 0.0  # Stop the rotation on z axis
         else:
             twist_msg.linear.x  = 0.0
             twist_msg.linear.y  = 0.0
             twist_msg.linear.z  = 0.0
             twist_msg.angular.x = 0.0
             twist_msg.angular.y = 0.0
-            twist_msg.angular.z = 0.3  # Ruota sull'asse Z
-        # Pubblica il messaggio
+            twist_msg.angular.z = 0.3  # rotate around z axis
+
         self.publisher_.publish(twist_msg)
-        #self.get_logger().info(f'Published: {twist_msg}')
+
 
 def main(args=None):
     rclpy.init(args=args)

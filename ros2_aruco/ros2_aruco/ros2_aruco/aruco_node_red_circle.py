@@ -32,6 +32,7 @@ from cv_bridge import CvBridge
 import numpy as np
 import cv2
 from ros2_aruco import transformations
+from collections import OrderedDict
 
 # ROS Messages
 from sensor_msgs.msg import CompressedImage, CameraInfo, Image
@@ -61,7 +62,7 @@ class ArucoNode(rclpy.node.Node):
         info_topic = self.get_parameter("camera_info_topic").get_parameter_value().string_value
         self.camera_frame = self.get_parameter("camera_frame").get_parameter_value().string_value
         self.pose_orientation = 1
-        self.box_marker_dict= {}
+        self.box_marker_dict= {} #dictionary of the aruco marker, where the key is the id and the value is the angle where to find it
         # Make sure we have a valid dictionary id
         try:
             dictionary_id = cv2.aruco.__getattribute__(dictionary_id_name)
@@ -79,7 +80,7 @@ class ArucoNode(rclpy.node.Node):
         # Set up publishers
         self.poses_pub = self.create_publisher(PoseArray, 'aruco_poses', 10)
         self.markers_pub = self.create_publisher(ArucoMarkers, 'aruco_markers', 10)
-        self.image_pub = self.create_publisher(CompressedImage, "/output/image_raw/compressed", 1)
+        self.image_pub = self.create_publisher(Image, "/output/image_raw/compressed", 1)
         
         self.pose_camera_position_pub = self.create_publisher(Float64MultiArray, '/camera_joint_z_axis_controller/commands', 10)
 
@@ -100,12 +101,12 @@ class ArucoNode(rclpy.node.Node):
         self.destroy_subscription(self.info_sub)
 
     def image_callback(self, img_msg):
-        global position_to_increase
-        global msg_position
-        if(position_to_increase <=3.14):
-            position_to_increase += 0.01
+        global position_to_increase #this is the angle that must be increase each time, the control is in position this time
+        global msg_position 
+        if(position_to_increase <=3.14): #the angle start from -3.14 and go until 3.14 in this way the camera will do a 360° rotation
+            position_to_increase += 0.01 #increase tha angle
             msg_position.data = [position_to_increase]
-            self.pose_camera_position_pub.publish(msg_position)
+            self.pose_camera_position_pub.publish(msg_position) #send the angle to the topic that manage the position of the camera
         
         
         if self.info_msg is None:
@@ -144,9 +145,10 @@ class ArucoNode(rclpy.node.Node):
                 rvecs, tvecs = cv2.aruco.estimatePoseSingleMarkers(corners, self.marker_size, self.intrinsic_mat, self.distortion)
 
             for i, marker_id in enumerate(marker_ids):
-                if (str(marker_id) not in self.box_marker_dict) and (len(marker_id)==1):
+                if (str(marker_id) not in self.box_marker_dict) and (len(marker_id)==1): #check if the 
                     self.box_marker_dict.update({str(marker_id): self.pose_orientation})
-                
+                    self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items()))   
+                    self.get_logger().info(f'Published: {self.box_marker_dict}')             
                 pose = Pose()
                 pose.position.x = tvecs[i][0][0]
                 pose.position.y = tvecs[i][0][1]
@@ -188,12 +190,10 @@ class ArucoNode(rclpy.node.Node):
             cv2.imshow("Image", cv_image)
             cv2.waitKey(1)
             print(self.box_marker_dict)
-            msg = CompressedImage()
-            msg.header.stamp = self.get_clock().now().to_msg()
-            msg.format = "jpeg"
-            msg.data = np.array(cv2.imencode('.jpg', cv_image)[1]).tobytes()
+            img_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8")
+            self.image_pub.publish(img_msg)
 
-            self.image_pub.publish(msg)
+            
             
 
 def main():

@@ -85,7 +85,7 @@ class ArucoNode(rclpy.node.Node):
         # Set up publishers
         self.poses_pub = self.create_publisher(PoseArray, 'aruco_poses', 10)
         self.markers_pub = self.create_publisher(ArucoMarkers, 'aruco_markers', 10)
-        self.image_pub = self.create_publisher(CompressedImage, "/output/image_raw/compressed", 1)
+        self.image_pub = self.create_publisher(Image, "/output/image_raw/compressed", 1)
         self.pose_camera_position_pub = self.create_publisher(Float64MultiArray, '/camera_joint_z_axis_controller/commands', 10)
         
         # Set up fields for camera parameters
@@ -107,13 +107,13 @@ class ArucoNode(rclpy.node.Node):
         self.destroy_subscription(self.info_sub)
 
     def orientation_and_position_callback(self,msg):
-    	 global orientation_q 
+    	 global orientation_q  
     	 orientation_q = msg.pose.pose.orientation
     def image_callback(self, img_msg):
         global position_to_increase
         global msg_position
         
-        if(position_to_increase <=3.14):
+        if(position_to_increase <=3.14): #the camera will start from a position of -3.14 degrees, when the camera will reach 3.14 will stop to publish and the movement of the camera will stop
             position_to_increase += 0.01
             msg_position.data = [position_to_increase]
             self.pose_camera_position_pub.publish(msg_position)
@@ -129,7 +129,7 @@ class ArucoNode(rclpy.node.Node):
         height_img, width_img = cv_image.shape[:2] #calculate the image dimension
         center_x, center_y = width_img / 2, height_img / 2 #find the center of the image
         
-        tolerance= 1
+        tolerance= 1 #in this case the tolerance is 100% to avoid glich of the program and detect all the marker
         tol_x = width_img * tolerance / 2
         tol_y = height_img * tolerance / 2
         markers = ArucoMarkers()
@@ -155,33 +155,8 @@ class ArucoNode(rclpy.node.Node):
                 rvecs, tvecs, _ = cv2.aruco.estimatePoseSingleMarkers(corners, self.marker_size, self.intrinsic_mat, self.distortion)
             else:
                 rvecs, tvecs = cv2.aruco.estimatePoseSingleMarkers(corners, self.marker_size, self.intrinsic_mat, self.distortion)
-                '''
-            for i, marker_id in enumerate(marker_ids):
-                if (str(marker_id) not in self.box_marker_dict) and (len(marker_id)==1):
-                    self.box_marker_dict.update({str(marker_id): self.pose_orientation})
-                    
-                
-                pose = Pose()
-                pose.position.x = tvecs[i][0][0]
-                pose.position.y = tvecs[i][0][1]
-                pose.position.z = tvecs[i][0][2]
+               
 
-                rot_matrix = np.eye(4)
-                rot_matrix[0:3, 0:3] = cv2.Rodrigues(np.array(rvecs[i][0]))[0]
-                quat = transformations.quaternion_from_matrix(rot_matrix)
-
-                pose.orientation.x = quat[0]
-                pose.orientation.y = quat[1]
-                pose.orientation.z = quat[2]
-                pose.orientation.w = quat[3]
-
-                pose_array.poses.append(pose)
-                markers.poses.append(pose)
-                markers.marker_ids.append(marker_id[0])
-
-            self.poses_pub.publish(pose_array)
-            self.markers_pub.publish(markers)
-	     '''
 	     
 	     
             # Annotate all markers on the image
@@ -195,30 +170,31 @@ class ArucoNode(rclpy.node.Node):
                 bottomLeft = (int(bottomLeft[0]), int(bottomLeft[1]))
                 topLeft = (int(topLeft[0]), int(topLeft[1]))
 			
-                cX = int((topLeft[0] + bottomRight[0]) / 2.0)
-                cY = int((topLeft[1] + bottomRight[1]) / 2.0)
-                cv2.putText(cv_image, str(marker_id), (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+                cX = int((topLeft[0] + bottomRight[0]) / 2.0)#center on x axis of the image
+                cY = int((topLeft[1] + bottomRight[1]) / 2.0)#center on y axis of the image  
+                cv2.putText(cv_image, str(marker_id), (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2) #insert the text on the images with the id
                 cv2.circle(cv_image, (cX, cY), 10, (0, 0, 255), 2)
                              
                 
-                if( center_x - tol_x <=cX <= center_x + tol_x) and (center_y -tol_y <= cY <= center_y + tol_y): #check if the marker is in the middle of the view
+                if( center_x - tol_x <=cX <= center_x + tol_x) and (center_y -tol_y <= cY <= center_y + tol_y): #check if the center of the aruco marker is in the "imaginary square"
+                    img_msg = self.bridge.cv2_to_imgmsg(cv_image, encoding="bgr8")
+                    self.image_pub.publish(img_msg) #pubblish the image
                 	#print('more or less in the middle')
-                	if (str(marker_id) not in self.box_marker_dict) and(marker_id>0 and marker_id<40):
-                         self.box_marker_dict.update({str(marker_id): position_to_increase })
+                    if (str(marker_id) not in self.box_marker_dict) and(marker_id>0 and marker_id<40):  #check if the marker detected is one and that not already present in the dictionary #additional check to avoid wrong numbers in the identification (somethimes appeared 1043 or similar numbers)
+                         self.box_marker_dict.update({str(marker_id): position_to_increase })#update the dictionary with key the marker id and values the position of the camera (used for future improvement)
                              #self.box_marker_dict.update({str(marker_id): 1}) #FOR DEBUGGING
                              #print(self.box_marker_dict.keys())
-                         self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items()))
-                         print(self.box_marker_dict.keys())
+                         self.box_marker_dict = OrderedDict(sorted(self.box_marker_dict.items()))#sort the dictionary by id
+                            #print(self.box_marker_dict.keys())
+                         #print(self.box_marker_dict.keys())
+                         self.get_logger().info(f'Received: {self.box_marker_dict.keys()}') #log of the order dictionary
                              # Display and publish annotated image
                              
                              #create compressed image
-                         msg = CompressedImage()
-                         msg.header.stamp = self.get_clock().now().to_msg()
-                         msg.format = "jpeg"
-                         msg.data = np.array(cv2.imencode('.jpg', cv_image)[1]).tobytes()
-                         self.image_pub.publish(msg) #pubblish the image
-                cv2.imshow("Image", cv_image)
-                cv2.waitKey(10)
+                         
+
+                #cv2.imshow("Image", cv_image)
+                #cv2.waitKey(10)
                              
         else:
             corners, marker_ids, _ = cv2.aruco.detectMarkers(cv_image, self.aruco_dictionary, parameters=self.aruco_parameters)            
