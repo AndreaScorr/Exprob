@@ -26,7 +26,7 @@ root@ab7d7c31fa8a:~/experimental_robotics# ros2 run ros2_aruco aruco_node_moving
 ```
 
 ## Flow Charts ##
-In both case the logic is the same. The robot will move arount itself, detect de marker and update the dictionary with the id and the position that he get from the odom topic or from the position that we send to the controller. 
+In both case the logic is the same. The robot will move arount itself, detect de marker and update the dictionary with the id and the position that he get from the odom topic or from the position that we send to the controller. To get more details i suggest to look the comments of the moving_robot.py, aruco_node_moving_robot.py ,aruco_node_moving_camera.py in the aruco_node folder. 
 
 ### First Part Moving only the robot ###
 ![alt text](https://github.com/AndreaScorr/Exprob/blob/main/Movin_Robot.drawio.png?raw=true)
