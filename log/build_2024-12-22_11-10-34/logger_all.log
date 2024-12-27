@@ -1,0 +1,818 @@
+[0.286s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.287s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f95c689dca0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f95c689dca0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f95c68ab4c0>)
+[0.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.445s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/experimental_robotics/src'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(assignment_1) by extension 'ros'
+[0.464s] DEBUG:colcon.colcon_core.package_identification:Package 'assignment_1' with type 'ros.ament_python' and name 'assignment_1'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(robot_urdf) by extension 'ros'
+[0.467s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_urdf' with type 'ros.ament_cmake' and name 'robot_urdf'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'ignore'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'ignore_ament_install'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['colcon_pkg']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'colcon_pkg'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['colcon_meta']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'ros'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['cmake', 'python']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'cmake'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'python'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extensions ['python_setup_py']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco) by extension 'python_setup_py'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco) by extension 'ros'
+[0.469s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[0.470s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'ros'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['cmake', 'python']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'cmake'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'python'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extensions ['python_setup_py']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system) by extension 'python_setup_py'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bringup) by extension 'ros'
+[0.472s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_bringup' with type 'ros.ament_cmake' and name 'plansys2_bringup'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extension 'colcon_pkg'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extensions ['colcon_meta']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_bt_actions) by extension 'ros'
+[0.474s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_bt_actions' with type 'ros.ament_cmake' and name 'plansys2_bt_actions'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extensions ['ignore', 'ignore_ament_install']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extension 'ignore'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extension 'ignore_ament_install'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extensions ['colcon_pkg']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extension 'colcon_pkg'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extensions ['colcon_meta']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extension 'colcon_meta'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extensions ['ros']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_core) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_core' with type 'ros.ament_cmake' and name 'plansys2_core'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'colcon_meta'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['ros']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'ros'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['cmake', 'python']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'cmake'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'python'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extensions ['python_setup_py']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs) by extension 'python_setup_py'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'ignore'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'ignore_ament_install'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['colcon_pkg']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'colcon_pkg'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'ros'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['cmake', 'python']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'cmake'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'python'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extensions ['python_setup_py']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_docs/tutorials) by extension 'python_setup_py'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extensions ['ignore', 'ignore_ament_install']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extension 'ignore'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extension 'ignore_ament_install'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extensions ['colcon_pkg']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extension 'colcon_pkg'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extensions ['colcon_meta']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extension 'colcon_meta'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extensions ['ros']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_domain_expert) by extension 'ros'
+[0.479s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_domain_expert' with type 'ros.ament_cmake' and name 'plansys2_domain_expert'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_executor) by extension 'ros'
+[0.481s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_executor' with type 'ros.ament_cmake' and name 'plansys2_executor'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extension 'ignore'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extension 'ignore_ament_install'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_lifecycle_manager) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_lifecycle_manager' with type 'ros.ament_cmake' and name 'plansys2_lifecycle_manager'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_msgs) by extension 'ros'
+[0.484s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_msgs' with type 'ros.ament_cmake' and name 'plansys2_msgs'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extension 'colcon_pkg'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extensions ['colcon_meta']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extension 'colcon_meta'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extensions ['ros']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_pddl_parser) by extension 'ros'
+[0.485s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_pddl_parser' with type 'ros.ament_cmake' and name 'plansys2_pddl_parser'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_planner) by extension 'ros'
+[0.487s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_planner' with type 'ros.ament_cmake' and name 'plansys2_planner'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extension 'ignore'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extensions ['colcon_meta']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extension 'colcon_meta'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extensions ['ros']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_popf_plan_solver) by extension 'ros'
+[0.489s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_popf_plan_solver' with type 'ros.ament_cmake' and name 'plansys2_popf_plan_solver'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extension 'ignore'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extension 'ignore_ament_install'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extensions ['colcon_pkg']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extension 'colcon_pkg'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extensions ['colcon_meta']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extension 'colcon_meta'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extensions ['ros']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_problem_expert) by extension 'ros'
+[0.491s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_problem_expert' with type 'ros.ament_cmake' and name 'plansys2_problem_expert'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extension 'ignore_ament_install'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extensions ['colcon_pkg']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extension 'colcon_pkg'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_terminal) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_terminal' with type 'ros.ament_cmake' and name 'plansys2_terminal'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extension 'ignore_ament_install'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extensions ['colcon_pkg']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extension 'colcon_pkg'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extensions ['colcon_meta']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_planning_system/plansys2_tests) by extension 'ros'
+[0.495s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_planning_system/plansys2_tests' with type 'ros.ament_cmake' and name 'plansys2_tests'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_bt_example) by extension 'ros'
+[0.497s] DEBUG:colcon.colcon_core.package_identification:Package 'src/plansys2_bt_example' with type 'ros.ament_cmake' and name 'plansys2_bt_example'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_cascade_example) by extension 'ros'
+[0.498s] DEBUG:colcon.colcon_core.package_identification:Package 'src/plansys2_cascade_example' with type 'ros.ament_cmake' and name 'plansys2_cascade_example'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extension 'colcon_meta'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extensions ['ros']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_multidomain_example) by extension 'ros'
+[0.499s] DEBUG:colcon.colcon_core.package_identification:Package 'src/plansys2_multidomain_example' with type 'ros.ament_cmake' and name 'plansys2_multidomain_example'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extensions ['colcon_pkg']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extension 'colcon_pkg'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extensions ['colcon_meta']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extension 'colcon_meta'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extensions ['ros']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_patrol_navigation_example) by extension 'ros'
+[0.501s] DEBUG:colcon.colcon_core.package_identification:Package 'src/plansys2_patrol_navigation_example' with type 'ros.ament_cmake' and name 'plansys2_patrol_navigation_example'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extension 'ignore'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extension 'ignore_ament_install'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extensions ['colcon_pkg']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extension 'colcon_pkg'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extensions ['colcon_meta']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extension 'colcon_meta'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extensions ['ros']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/plansys2_simple_example) by extension 'ros'
+[0.502s] DEBUG:colcon.colcon_core.package_identification:Package 'src/plansys2_simple_example' with type 'ros.ament_cmake' and name 'plansys2_simple_example'
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.555s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /root/experimental_robotics/install
+[0.556s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/foxy
+[0.558s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_target' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_clean_first' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'cmake_force_configure' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'ament_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'assignment_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.719s] DEBUG:colcon.colcon_core.verb:Building package 'assignment_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/assignment_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/assignment_1', 'merge_install': False, 'path': '/root/experimental_robotics/src/assignment_1', 'symlink_install': True, 'test_result_base': None}
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_target' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_lifecycle_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.720s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_lifecycle_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_lifecycle_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_lifecycle_manager', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager', 'symlink_install': True, 'test_result_base': None}
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'plansys2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.720s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_msgs', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_target' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_clean_first' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'cmake_force_configure' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'ament_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'robot_urdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.721s] DEBUG:colcon.colcon_core.verb:Building package 'robot_urdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/robot_urdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/robot_urdf', 'merge_install': False, 'path': '/root/experimental_robotics/src/robot_urdf', 'symlink_install': True, 'test_result_base': None}
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.721s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/ros2_aruco', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_aruco/ros2_aruco', 'symlink_install': True, 'test_result_base': None}
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_pddl_parser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_pddl_parser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_pddl_parser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_pddl_parser', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_pddl_parser', 'symlink_install': True, 'test_result_base': None}
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'plansys2_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_core', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_core', 'symlink_install': True, 'test_result_base': None}
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_clean_first' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'cmake_force_configure' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_popf_plan_solver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.723s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_popf_plan_solver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_popf_plan_solver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_popf_plan_solver', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_popf_plan_solver', 'symlink_install': True, 'test_result_base': None}
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_clean_first' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'cmake_force_configure' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'catkin_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_domain_expert' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.723s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_domain_expert' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_domain_expert', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_domain_expert', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_domain_expert', 'symlink_install': True, 'test_result_base': None}
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_problem_expert' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_problem_expert' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_problem_expert', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_problem_expert', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_problem_expert', 'symlink_install': True, 'test_result_base': None}
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_target' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_planner', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_planner', 'symlink_install': True, 'test_result_base': None}
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_target' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'plansys2_executor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_executor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_executor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_executor', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_executor', 'symlink_install': True, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_target' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.725s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_bringup', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_target' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_clean_first' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'cmake_force_configure' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'ament_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_actions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.725s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_bt_actions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_bt_actions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_bt_actions', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_bt_actions', 'symlink_install': True, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_cascade_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_cascade_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_cascade_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_cascade_example', 'merge_install': False, 'path': '/root/experimental_robotics/src/src/plansys2_cascade_example', 'symlink_install': True, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_multidomain_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_multidomain_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_multidomain_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_multidomain_example', 'merge_install': False, 'path': '/root/experimental_robotics/src/src/plansys2_multidomain_example', 'symlink_install': True, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'plansys2_patrol_navigation_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_patrol_navigation_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_patrol_navigation_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_patrol_navigation_example', 'merge_install': False, 'path': '/root/experimental_robotics/src/src/plansys2_patrol_navigation_example', 'symlink_install': True, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_simple_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_simple_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_simple_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_simple_example', 'merge_install': False, 'path': '/root/experimental_robotics/src/src/plansys2_simple_example', 'symlink_install': True, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_clean_cache' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'plansys2_terminal' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_terminal' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_terminal', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_terminal', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_terminal', 'symlink_install': True, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_tests', 'merge_install': False, 'path': '/root/experimental_robotics/src/ros2_planning_system/plansys2_tests', 'symlink_install': True, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'plansys2_bt_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'plansys2_bt_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/experimental_robotics/src/build/plansys2_bt_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/experimental_robotics/src/install/plansys2_bt_example', 'merge_install': False, 'path': '/root/experimental_robotics/src/src/plansys2_bt_example', 'symlink_install': True, 'test_result_base': None}
+[0.728s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.730s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.730s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/experimental_robotics/src/ros2_planning_system/plansys2_msgs' with build type 'ament_cmake'
+[0.730s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/experimental_robotics/src/ros2_planning_system/plansys2_msgs'
+[0.736s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.736s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.736s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.742s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager' with build type 'ament_cmake'
+[0.742s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager'
+[0.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.748s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/experimental_robotics/src/assignment_1' with build type 'ament_python'
+[0.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment_1', 'ament_prefix_path')
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/ament_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/ament_prefix_path.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/ament_prefix_path.sh'
+[0.752s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.752s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.757s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/experimental_robotics/src/robot_urdf' with build type 'ament_cmake'
+[0.758s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/experimental_robotics/src/robot_urdf'
+[0.758s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.758s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.764s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/experimental_robotics/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[0.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[0.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.767s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.771s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[0.772s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces'
+[0.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/plansys2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_msgs
+[0.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_lifecycle_manager
+[0.974s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/experimental_robotics/src/assignment_1'
+[0.975s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.975s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/robot_urdf
+[1.177s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/experimental_robotics/src/ros2_aruco/ros2_aruco'
+[1.177s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.177s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/ros2_aruco_interfaces
+[1.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/assignment_1': PYTHONPATH=/root/experimental_robotics/src/build/assignment_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/assignment_1/build --no-deps symlink_data
+[1.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/ros2_aruco': PYTHONPATH=/root/experimental_robotics/src/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/ros2_aruco/build --no-deps symlink_data
+[2.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/robot_urdf
+[2.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/robot_urdf -- -j12 -l12
+[2.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/robot_urdf -- -j12 -l12
+[2.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/robot_urdf
+[2.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment_1', 'pythonpath_develop')
+[2.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/build/assignment_1/share/assignment_1/hook/pythonpath_develop.ps1'
+[2.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/assignment_1' returned '0': PYTHONPATH=/root/experimental_robotics/src/build/assignment_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/assignment_1/build --no-deps symlink_data
+[2.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/build/assignment_1/share/assignment_1/hook/pythonpath_develop.dsv'
+[2.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/build/assignment_1/share/assignment_1/hook/pythonpath_develop.sh'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1' for CMake module files
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1' for CMake config files
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1/lib'
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1/bin'
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1/lib/pkgconfig/assignment_1.pc'
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages'
+[2.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment_1', 'pythonpath')
+[2.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/pythonpath.ps1'
+[2.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/pythonpath.dsv'
+[2.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/hook/pythonpath.sh'
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/assignment_1/bin'
+[2.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment_1)
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/package.ps1'
+[2.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/package.dsv'
+[2.255s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/package.sh'
+[2.256s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/package.bash'
+[2.258s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/assignment_1/share/assignment_1/package.zsh'
+[2.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/assignment_1/share/colcon-core/packages/assignment_1)
+[2.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath_develop')
+[2.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/build/ros2_aruco/share/ros2_aruco/hook/pythonpath_develop.ps1'
+[2.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/ros2_aruco' returned '0': PYTHONPATH=/root/experimental_robotics/src/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/ros2_aruco/build --no-deps symlink_data
+[2.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/build/ros2_aruco/share/ros2_aruco/hook/pythonpath_develop.dsv'
+[2.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/build/ros2_aruco/share/ros2_aruco/hook/pythonpath_develop.sh'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco' for CMake module files
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco' for CMake config files
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco/lib'
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco/bin'
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco/lib/pkgconfig/ros2_aruco.pc'
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages'
+[2.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath')
+[2.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.ps1'
+[2.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.dsv'
+[2.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.sh'
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco/bin'
+[2.267s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco)
+[2.268s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/package.ps1'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/package.dsv'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/package.sh'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/package.bash'
+[2.270s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco/package.zsh'
+[2.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/ros2_aruco/share/colcon-core/packages/ros2_aruco)
+[2.557s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_urdf)
+[2.557s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf' for CMake module files
+[2.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/robot_urdf
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf' for CMake config files
+[2.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_urdf', 'cmake_prefix_path')
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.ps1'
+[2.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.dsv'
+[2.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.sh'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/bin'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/lib/pkgconfig/robot_urdf.pc'
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/lib/python3.8/site-packages'
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/bin'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.ps1'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.dsv'
+[2.561s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.sh'
+[2.561s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.bash'
+[2.561s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.zsh'
+[2.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/robot_urdf/share/colcon-core/packages/robot_urdf)
+[2.583s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_urdf)
+[2.583s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf' for CMake module files
+[2.584s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf' for CMake config files
+[2.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_urdf', 'cmake_prefix_path')
+[2.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.ps1'
+[2.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.dsv'
+[2.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/hook/cmake_prefix_path.sh'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/bin'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/lib/pkgconfig/robot_urdf.pc'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/lib/python3.8/site-packages'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/robot_urdf/bin'
+[2.587s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.ps1'
+[2.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.dsv'
+[2.588s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.sh'
+[2.588s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.bash'
+[2.589s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.zsh'
+[2.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/robot_urdf/share/colcon-core/packages/robot_urdf)
+[2.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_lifecycle_manager
+[2.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_lifecycle_manager -- -j12 -l12
+[3.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/ros2_aruco_interfaces
+[3.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/ros2_aruco_interfaces -- -j12 -l12
+[3.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/plansys2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_msgs
+[3.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/plansys2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_msgs -- -j12 -l12
+[5.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/ros2_aruco_interfaces -- -j12 -l12
+[5.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/ros2_aruco_interfaces
+[6.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[6.777s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces' for CMake module files
+[6.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/ros2_aruco_interfaces
+[6.779s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces' for CMake config files
+[6.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[6.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[6.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[6.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[6.782s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib'
+[6.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[6.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[6.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[6.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[6.784s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/bin'
+[6.784s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[6.785s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[6.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[6.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[6.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[6.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[6.786s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/bin'
+[6.787s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[6.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[6.788s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[6.789s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[6.789s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[6.789s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[6.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[6.923s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces' for CMake module files
+[6.924s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces' for CMake config files
+[6.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[6.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[6.926s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[6.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[6.927s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib'
+[6.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[6.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[6.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[6.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[6.930s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/bin'
+[6.930s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[6.930s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[6.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[6.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[6.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[6.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[6.933s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/ros2_aruco_interfaces/bin'
+[6.934s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[6.935s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[6.936s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[6.936s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[6.937s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[6.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[9.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_lifecycle_manager -- -j12 -l12
+[9.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/plansys2_lifecycle_manager
+[10.333s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(plansys2_lifecycle_manager)
+[10.334s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager' for CMake module files
+[10.336s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager' for CMake config files
+[10.337s] Level 1:colcon.colcon_core.shell:create_environment_hook('plansys2_lifecycle_manager', 'cmake_prefix_path')
+[10.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.ps1'
+[10.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.dsv'
+[10.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.sh'
+[10.342s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib'
+[10.342s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/bin'
+[10.342s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/pkgconfig/plansys2_lifecycle_manager.pc'
+[10.342s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/python3.8/site-packages'
+[10.343s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/bin'
+[10.343s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.ps1'
+[10.344s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.dsv'
+[10.345s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.sh'
+[10.346s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.bash'
+[10.347s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.zsh'
+[10.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/plansys2_lifecycle_manager
+[10.348s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/colcon-core/packages/plansys2_lifecycle_manager)
+[10.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(plansys2_lifecycle_manager)
+[10.439s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager' for CMake module files
+[10.440s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager' for CMake config files
+[10.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('plansys2_lifecycle_manager', 'cmake_prefix_path')
+[10.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.ps1'
+[10.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.dsv'
+[10.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/hook/cmake_prefix_path.sh'
+[10.444s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib'
+[10.444s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/bin'
+[10.444s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/pkgconfig/plansys2_lifecycle_manager.pc'
+[10.444s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/python3.8/site-packages'
+[10.445s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/bin'
+[10.445s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.ps1'
+[10.446s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.dsv'
+[10.447s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.sh'
+[10.448s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.bash'
+[10.449s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.zsh'
+[10.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/colcon-core/packages/plansys2_lifecycle_manager)
+[17.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[17.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[17.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/experimental_robotics/src/build/plansys2_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_msgs -- -j12 -l12
+[18.306s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(plansys2_msgs)
+[18.306s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs' for CMake module files
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs' for CMake config files
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs/bin'
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs/lib/pkgconfig/plansys2_msgs.pc'
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs/lib/python3.8/site-packages'
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/root/experimental_robotics/src/install/plansys2_msgs/bin'
+[18.307s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_msgs/share/plansys2_msgs/package.ps1'
+[18.308s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/experimental_robotics/src/install/plansys2_msgs/share/plansys2_msgs/package.dsv'
+[18.308s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_msgs/share/plansys2_msgs/package.sh'
+[18.309s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_msgs/share/plansys2_msgs/package.bash'
+[18.309s] INFO:colcon.colcon_core.shell:Creating package script '/root/experimental_robotics/src/install/plansys2_msgs/share/plansys2_msgs/package.zsh'
+[18.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/experimental_robotics/src/install/plansys2_msgs/share/colcon-core/packages/plansys2_msgs)
+[18.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[18.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.320s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.340s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[18.340s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.340s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.340s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.350s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[18.350s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.351s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/install/local_setup.ps1'
+[18.352s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/experimental_robotics/src/install/_local_setup_util_ps1.py'
+[18.354s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/install/setup.ps1'
+[18.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/install/local_setup.sh'
+[18.357s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/experimental_robotics/src/install/_local_setup_util_sh.py'
+[18.357s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/install/setup.sh'
+[18.359s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/install/local_setup.bash'
+[18.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/install/setup.bash'
+[18.361s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/experimental_robotics/src/install/local_setup.zsh'
+[18.362s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/experimental_robotics/src/install/setup.zsh'

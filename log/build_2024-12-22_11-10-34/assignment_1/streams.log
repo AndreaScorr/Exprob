@@ -1,0 +1,24 @@
+[1.046s] Invoking command in '/root/experimental_robotics/src/build/assignment_1': PYTHONPATH=/root/experimental_robotics/src/build/assignment_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/assignment_1/build --no-deps symlink_data
+[1.257s] running develop
+[1.376s] running egg_info
+[1.376s] creating assignment_1.egg-info
+[1.376s] writing assignment_1.egg-info/PKG-INFO
+[1.376s] writing dependency_links to assignment_1.egg-info/dependency_links.txt
+[1.376s] writing entry points to assignment_1.egg-info/entry_points.txt
+[1.377s] writing requirements to assignment_1.egg-info/requires.txt
+[1.377s] writing top-level names to assignment_1.egg-info/top_level.txt
+[1.382s] writing manifest file 'assignment_1.egg-info/SOURCES.txt'
+[1.412s] reading manifest file 'assignment_1.egg-info/SOURCES.txt'
+[1.412s] writing manifest file 'assignment_1.egg-info/SOURCES.txt'
+[1.447s] running build_ext
+[1.447s] Creating /root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages/site.py
+[1.449s] Creating /root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages/assignment-1.egg-link (link to .)
+[1.450s] 
+[1.450s] Installed /root/experimental_robotics/src/build/assignment_1
+[1.450s] running symlink_data
+[1.451s] creating /root/experimental_robotics/src/install/assignment_1/share/ament_index
+[1.451s] creating /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index
+[1.451s] creating /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index/packages
+[1.451s] symbolically linking /root/experimental_robotics/src/build/assignment_1/resource/assignment_1 -> /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index/packages
+[1.451s] symbolically linking /root/experimental_robotics/src/build/assignment_1/package.xml -> /root/experimental_robotics/src/install/assignment_1/share/assignment_1
+[1.485s] Invoked command in '/root/experimental_robotics/src/build/assignment_1' returned '0': PYTHONPATH=/root/experimental_robotics/src/build/assignment_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/assignment_1/build --no-deps symlink_data

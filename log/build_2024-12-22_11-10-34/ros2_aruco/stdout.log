@@ -1,0 +1,28 @@
+running develop
+running egg_info
+creating ros2_aruco.egg-info
+writing ros2_aruco.egg-info/PKG-INFO
+writing dependency_links to ros2_aruco.egg-info/dependency_links.txt
+writing entry points to ros2_aruco.egg-info/entry_points.txt
+writing requirements to ros2_aruco.egg-info/requires.txt
+writing top-level names to ros2_aruco.egg-info/top_level.txt
+writing manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+reading manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+writing manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+running build_ext
+Creating /root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages/site.py
+Creating /root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages/ros2-aruco.egg-link (link to .)
+Installing aruco_generate_marker script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+Installing aruco_node script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+Installing aruco_node_moving_camera script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+Installing aruco_node_moving_robot script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+Installing aruco_node_red_circle script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+Installing moving_robot script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+
+Installed /root/experimental_robotics/src/build/ros2_aruco
+running symlink_data
+creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index
+creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index
+creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index/packages
+symbolically linking /root/experimental_robotics/src/build/ros2_aruco/resource/ros2_aruco -> /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index/packages
+symbolically linking /root/experimental_robotics/src/build/ros2_aruco/package.xml -> /root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco

@@ -1,0 +1,30 @@
+[1.038s] Invoking command in '/root/experimental_robotics/src/build/ros2_aruco': PYTHONPATH=/root/experimental_robotics/src/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/ros2_aruco/build --no-deps symlink_data
+[1.265s] running develop
+[1.385s] running egg_info
+[1.386s] creating ros2_aruco.egg-info
+[1.386s] writing ros2_aruco.egg-info/PKG-INFO
+[1.386s] writing dependency_links to ros2_aruco.egg-info/dependency_links.txt
+[1.386s] writing entry points to ros2_aruco.egg-info/entry_points.txt
+[1.386s] writing requirements to ros2_aruco.egg-info/requires.txt
+[1.386s] writing top-level names to ros2_aruco.egg-info/top_level.txt
+[1.387s] writing manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+[1.420s] reading manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+[1.421s] writing manifest file 'ros2_aruco.egg-info/SOURCES.txt'
+[1.455s] running build_ext
+[1.455s] Creating /root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages/site.py
+[1.458s] Creating /root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages/ros2-aruco.egg-link (link to .)
+[1.459s] Installing aruco_generate_marker script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.459s] Installing aruco_node script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.459s] Installing aruco_node_moving_camera script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.459s] Installing aruco_node_moving_robot script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.460s] Installing aruco_node_red_circle script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.460s] Installing moving_robot script to /root/experimental_robotics/src/install/ros2_aruco/lib/ros2_aruco
+[1.460s] 
+[1.460s] Installed /root/experimental_robotics/src/build/ros2_aruco
+[1.460s] running symlink_data
+[1.461s] creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index
+[1.461s] creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index
+[1.461s] creating /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index/packages
+[1.461s] symbolically linking /root/experimental_robotics/src/build/ros2_aruco/resource/ros2_aruco -> /root/experimental_robotics/src/install/ros2_aruco/share/ament_index/resource_index/packages
+[1.461s] symbolically linking /root/experimental_robotics/src/build/ros2_aruco/package.xml -> /root/experimental_robotics/src/install/ros2_aruco/share/ros2_aruco
+[1.498s] Invoked command in '/root/experimental_robotics/src/build/ros2_aruco' returned '0': PYTHONPATH=/root/experimental_robotics/src/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/experimental_robotics/src/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/experimental_robotics/src/build/ros2_aruco/build --no-deps symlink_data

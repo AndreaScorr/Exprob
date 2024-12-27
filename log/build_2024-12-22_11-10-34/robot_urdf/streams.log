@@ -1,0 +1,89 @@
+[0.226s] Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/robot_urdf
+[0.436s] -- The C compiler identification is GNU 9.4.0
+[0.436s] -- The CXX compiler identification is GNU 9.4.0
+[0.436s] -- Check for working C compiler: /usr/bin/cc
+[0.448s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.448s] -- Detecting C compiler ABI info
+[0.518s] -- Detecting C compiler ABI info - done
+[0.527s] -- Detecting C compile features
+[0.528s] -- Detecting C compile features - done
+[0.533s] -- Check for working CXX compiler: /usr/bin/c++
+[0.609s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.611s] -- Detecting CXX compiler ABI info
+[0.696s] -- Detecting CXX compiler ABI info - done
+[0.710s] -- Detecting CXX compile features
+[0.710s] -- Detecting CXX compile features - done
+[0.736s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.777s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.777s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.956s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.046s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.292s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.308s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.310s] -- Added test 'lint_cmake' to check CMake code style
+[1.311s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.317s] -- Added test 'xmllint' to check XML markup files
+[1.322s] -- Configuring done
+[1.325s] -- Generating done
+[1.326s] -- Build files have been written to: /root/experimental_robotics/src/build/robot_urdf
+[1.331s] Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/robot_urdf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/robot_urdf
+[1.335s] Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/robot_urdf -- -j12 -l12
+[1.372s] Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/robot_urdf -- -j12 -l12
+[1.411s] Invoking command in '/root/experimental_robotics/src/build/robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/robot_urdf
+[1.419s] -- Install configuration: ""
+[1.419s] -- Execute custom install script
+[1.420s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/__pycache__/gazebo.launch.cpython-38.pyc
+[1.430s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/__pycache__/gazebo_arm.launch.cpython-38.pyc
+[1.441s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/gazebo.launch.py
+[1.450s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/gazebo_arm.launch.py
+[1.461s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/gazebo_aruco.launch.py
+[1.470s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//launch/gazebo_moving_robot.launch.py
+[1.479s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//urdf/m2wr_arm2.gazebo
+[1.487s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//urdf/m2wr_arm2.xacro
+[1.496s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//urdf/materials.xacro
+[1.504s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//urdf/robot4.gazebo
+[1.511s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//urdf/robot4.xacro
+[1.518s] CMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[1.519s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[1.519s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[1.519s]   Use the cmake_policy command to set the policy and suppress this warning.
+[1.519s] Call Stack (most recent call first):
+[1.519s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[1.519s]   cmake_install.cmake:41 (include)
+[1.519s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.519s] 
+[1.519s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/config.yaml
+[1.527s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/config_motors.yaml
+[1.537s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/COLCON_IGNORE
+[1.545s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/build_2024-10-25_13-57-43/events.log
+[1.554s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/build_2024-10-25_13-57-43/logger_all.log
+[1.561s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/latest/events.log
+[1.569s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/latest/logger_all.log
+[1.577s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/latest_build/events.log
+[1.585s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/log/latest_build/logger_all.log
+[1.593s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//config/rviz.rviz
+[1.601s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/aruco_test.world
+[1.610s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/newWorld.world/model.config
+[1.618s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/newWorld.world/model.sdf
+[1.626s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/newWorld_5.world
+[1.634s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/new_world/model.config
+[1.642s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/new_world/model.sdf
+[1.650s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/world5Box.world
+[1.658s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/world5Boxes.world/model.config
+[1.666s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf//worlds/world5Boxes.world/model.sdf
+[1.674s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/ament_index/resource_index/package_run_dependencies/robot_urdf
+[1.682s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/ament_index/resource_index/parent_prefix_path/robot_urdf
+[1.691s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/environment/ament_prefix_path.sh
+[1.699s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/environment/ament_prefix_path.dsv
+[1.707s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/environment/path.sh
+[1.715s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/environment/path.dsv
+[1.723s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/local_setup.bash
+[1.731s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/local_setup.sh
+[1.739s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/local_setup.zsh
+[1.748s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/local_setup.dsv
+[1.756s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.dsv
+[1.764s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/ament_index/resource_index/packages/robot_urdf
+[1.772s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/cmake/robot_urdfConfig.cmake
+[1.782s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/cmake/robot_urdfConfig-version.cmake
+[1.790s] -- Symlinking: /root/experimental_robotics/src/install/robot_urdf/share/robot_urdf/package.xml
+[1.799s] Invoked command in '/root/experimental_robotics/src/build/robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/robot_urdf

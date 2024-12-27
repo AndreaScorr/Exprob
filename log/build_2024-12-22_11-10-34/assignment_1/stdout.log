@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating assignment_1.egg-info
+writing assignment_1.egg-info/PKG-INFO
+writing dependency_links to assignment_1.egg-info/dependency_links.txt
+writing entry points to assignment_1.egg-info/entry_points.txt
+writing requirements to assignment_1.egg-info/requires.txt
+writing top-level names to assignment_1.egg-info/top_level.txt
+writing manifest file 'assignment_1.egg-info/SOURCES.txt'
+reading manifest file 'assignment_1.egg-info/SOURCES.txt'
+writing manifest file 'assignment_1.egg-info/SOURCES.txt'
+running build_ext
+Creating /root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages/site.py
+Creating /root/experimental_robotics/src/install/assignment_1/lib/python3.8/site-packages/assignment-1.egg-link (link to .)
+
+Installed /root/experimental_robotics/src/build/assignment_1
+running symlink_data
+creating /root/experimental_robotics/src/install/assignment_1/share/ament_index
+creating /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index
+creating /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index/packages
+symbolically linking /root/experimental_robotics/src/build/assignment_1/resource/assignment_1 -> /root/experimental_robotics/src/install/assignment_1/share/ament_index/resource_index/packages
+symbolically linking /root/experimental_robotics/src/build/assignment_1/package.xml -> /root/experimental_robotics/src/install/assignment_1/share/assignment_1

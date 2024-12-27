@@ -1,0 +1,188 @@
+[0.414s] Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/ros2_aruco_interfaces
+[0.459s] -- The C compiler identification is GNU 9.4.0
+[0.509s] -- The CXX compiler identification is GNU 9.4.0
+[0.512s] -- Check for working C compiler: /usr/bin/cc
+[0.577s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.577s] -- Detecting C compiler ABI info
+[0.641s] -- Detecting C compiler ABI info - done
+[0.649s] -- Detecting C compile features
+[0.650s] -- Detecting C compile features - done
+[0.653s] -- Check for working CXX compiler: /usr/bin/c++
+[0.727s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.728s] -- Detecting CXX compiler ABI info
+[0.800s] -- Detecting CXX compiler ABI info - done
+[0.809s] -- Detecting CXX compile features
+[0.809s] -- Detecting CXX compile features - done
+[0.813s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.850s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.850s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.031s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.096s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.166s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.295s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.336s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.469s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.567s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.607s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.769s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.999s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.076s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.105s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.110s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.145s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.145s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.145s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.145s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.172s] -- Found PythonExtra: .so  
+[2.252s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.298s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.299s] -- Added test 'lint_cmake' to check CMake code style
+[2.300s] -- Added test 'xmllint' to check XML markup files
+[2.305s] -- Configuring done
+[2.365s] -- Generating done
+[2.369s] -- Build files have been written to: /root/experimental_robotics/src/build/ros2_aruco_interfaces
+[2.382s] Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_aruco/ros2_aruco_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/ros2_aruco_interfaces
+[2.383s] Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/ros2_aruco_interfaces -- -j12 -l12
+[2.424s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__cpp[0m
+[2.433s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.437s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.688s] [  6%] Built target ros2_aruco_interfaces__cpp
+[2.705s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.706s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.707s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.707s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_generator_c[0m
+[2.759s] [ 19%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c.o[0m
+[2.821s] [ 22%] [32m[1mLinking C shared library libros2_aruco_interfaces__rosidl_generator_c.so[0m
+[2.882s] [ 22%] Built target ros2_aruco_interfaces__rosidl_generator_c
+[2.895s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.897s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.947s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_cpp[0m
+[2.956s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.961s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.969s] [ 32%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o[0m
+[2.983s] [ 38%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp.o[0m
+[2.983s] [ 38%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_aruco_interfaces/msg/detail/dds_fastrtps/aruco_markers__type_support.cpp.o[0m
+[3.128s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_c[0m
+[3.146s] [ 41%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o[0m
+[3.162s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_c[0m
+[3.182s] [ 45%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_c.so[0m
+[3.186s] [ 48%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c.o[0m
+[3.227s] [ 51%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_cpp.so[0m
+[3.230s] [ 54%] [32m[1mLinking C shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.234s] [ 54%] Built target ros2_aruco_interfaces__rosidl_typesupport_c
+[3.270s] [ 54%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c
+[3.279s] [ 54%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp
+[3.344s] [ 58%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.414s] [ 58%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp
+[3.434s] [ 61%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.534s] [ 61%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.548s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.787s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.807s] [ 67%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support_c.cpp.o[0m
+[4.061s] [ 70%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.152s] [ 70%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c
+[4.161s] [35m[1mScanning dependencies of target ros2_aruco_interfaces[0m
+[4.172s] [ 70%] Built target ros2_aruco_interfaces
+[4.181s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__py[0m
+[4.196s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.707s] [ 74%] Built target ros2_aruco_interfaces__py
+[4.719s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__python[0m
+[4.785s] [ 77%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__python.dir/rosidl_generator_py/ros2_aruco_interfaces/msg/_aruco_markers_s.c.o[0m
+[4.890s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/libros2_aruco_interfaces__python.so[0m
+[4.933s] [ 80%] Built target ros2_aruco_interfaces__python
+[4.944s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[4.945s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_c__pyext[0m
+[4.946s] [35m[1mScanning dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.966s] [ 83%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.966s] [ 87%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.970s] [ 90%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.058s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.059s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.060s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.095s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.099s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext
+[5.133s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.144s] Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/ros2_aruco_interfaces -- -j12 -l12
+[5.215s] Invoking command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/ros2_aruco_interfaces
+[5.222s] -- Install configuration: ""
+[5.223s] -- Execute custom install script
+[5.223s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces
+[5.237s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/aruco_markers.h
+[5.247s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h
+[5.258s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h
+[5.266s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h
+[5.278s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.293s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh
+[5.308s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv
+[5.320s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h
+[5.337s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.352s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.366s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[5.382s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.398s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.413s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h
+[5.428s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.441s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/aruco_markers.hpp
+[5.456s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp
+[5.471s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp
+[5.486s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp
+[5.500s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.hpp
+[5.513s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.526s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp
+[5.535s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh
+[5.542s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv
+[5.554s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/__init__.py
+[5.567s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/msg/__init__.py
+[5.578s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/msg/_aruco_markers.py
+[5.589s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.601s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.613s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.626s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__python.so
+[5.639s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl
+[5.651s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg
+[5.664s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces
+[5.679s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces
+[5.691s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh
+[5.704s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv
+[5.716s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh
+[5.727s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv
+[5.742s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash
+[5.755s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh
+[5.769s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh
+[5.780s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv
+[5.793s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv
+[5.808s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces
+[5.823s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.834s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.849s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.861s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.873s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.886s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.897s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.909s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake
+[5.920s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake
+[5.931s] -- Symlinking: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml
+[5.940s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so
+[5.940s] -- Set runtime path of "/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so" to ""
+[5.941s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
+[5.941s] -- Set runtime path of "/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.941s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
+[5.942s] -- Set runtime path of "/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so" to ""
+[5.942s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.942s] -- Set runtime path of "/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.943s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
+[5.943s] -- Set runtime path of "/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.991s] Compiling '/root/experimental_robotics/src/install/ros2_aruco_interfaces/lib/python3.8/site-packages/ros2_aruco_interfaces/__init__.py'...
+[5.996s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_generator_cExport.cmake
+[5.997s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.997s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.997s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.998s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake
+[5.999s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.999s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_generator_cppExport.cmake
+[6.000s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.000s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.000s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake
+[6.001s] -- Installing: /root/experimental_robotics/src/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.005s] Invoked command in '/root/experimental_robotics/src/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/ros2_aruco_interfaces

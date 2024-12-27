@@ -1,0 +1,104 @@
+[0.049s] Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_lifecycle_manager
+[0.448s] -- The C compiler identification is GNU 9.4.0
+[0.448s] -- The CXX compiler identification is GNU 9.4.0
+[0.449s] -- Check for working C compiler: /usr/bin/cc
+[0.459s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.461s] -- Detecting C compiler ABI info
+[0.538s] -- Detecting C compiler ABI info - done
+[0.551s] -- Detecting C compile features
+[0.552s] -- Detecting C compile features - done
+[0.556s] -- Check for working CXX compiler: /usr/bin/c++
+[0.634s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.634s] -- Detecting CXX compiler ABI info
+[0.709s] -- Detecting CXX compiler ABI info - done
+[0.720s] -- Detecting CXX compile features
+[0.720s] -- Detecting CXX compile features - done
+[0.725s] -- Looking for pthread.h
+[0.800s] -- Looking for pthread.h - found
+[0.800s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.867s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.867s] -- Looking for pthread_create in pthreads
+[0.921s] -- Looking for pthread_create in pthreads - not found
+[0.921s] -- Looking for pthread_create in pthread
+[0.984s] -- Looking for pthread_create in pthread - found
+[0.985s] -- Found Threads: TRUE  
+[0.988s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.026s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.027s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.194s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.254s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.351s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.366s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.485s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.527s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.624s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.703s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.707s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.880s] -- Found rclcpp_lifecycle: 2.4.3 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+[1.927s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.016s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.018s] -- Check if compiler accepts -pthread
+[2.078s] -- Check if compiler accepts -pthread - yes
+[2.085s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.087s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.087s] -- Configured cppcheck include dirs: /root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager/include
+[2.087s] -- Configured cppcheck exclude dirs and/or files: 
+[2.088s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.088s] -- Configured cpplint exclude dirs and/or files: 
+[2.089s] -- Added test 'lint_cmake' to check CMake code style
+[2.090s] -- Added test 'uncrustify' to check C / C++ code style
+[2.090s] -- Configured uncrustify additional arguments: 
+[2.090s] -- Added test 'xmllint' to check XML markup files
+[2.097s] -- Configuring done
+[2.111s] -- Generating done
+[2.112s] -- Build files have been written to: /root/experimental_robotics/src/build/plansys2_lifecycle_manager
+[2.120s] Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake /root/experimental_robotics/src/ros2_planning_system/plansys2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/experimental_robotics/src/install/plansys2_lifecycle_manager
+[2.123s] Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_lifecycle_manager -- -j12 -l12
+[2.157s] [35m[1mScanning dependencies of target plansys2_lifecycle_manager[0m
+[2.157s] [35m[1mScanning dependencies of target gtest_main[0m
+[2.160s] [35m[1mScanning dependencies of target gtest[0m
+[2.183s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.184s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.324s] [ 30%] [32mBuilding CXX object CMakeFiles/plansys2_lifecycle_manager.dir/src/plansys2_lifecycle_manager/lifecycle_manager.cpp.o[0m
+[2.780s] [ 40%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[2.824s] [ 40%] Built target gtest_main
+[4.879s] [ 50%] [32m[1mLinking CXX static library libplansys2_lifecycle_manager.a[0m
+[4.925s] [ 50%] Built target plansys2_lifecycle_manager
+[4.936s] [35m[1mScanning dependencies of target lifecycle_manager_node[0m
+[4.965s] [ 60%] [32mBuilding CXX object CMakeFiles/lifecycle_manager_node.dir/src/lifecycle_manager_node.cpp.o[0m
+[5.092s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[5.151s] [ 70%] Built target gtest
+[5.161s] [35m[1mScanning dependencies of target lf_manager_test[0m
+[5.209s] [ 80%] [32mBuilding CXX object test/CMakeFiles/lf_manager_test.dir/lf_manager_test.cpp.o[0m
+[7.227s] [ 90%] [32m[1mLinking CXX executable lifecycle_manager_node[0m
+[7.705s] [ 90%] Built target lifecycle_manager_node
+[8.699s] [100%] [32m[1mLinking CXX executable lf_manager_test[0m
+[9.048s] [100%] Built target lf_manager_test
+[9.065s] Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --build /root/experimental_robotics/src/build/plansys2_lifecycle_manager -- -j12 -l12
+[9.218s] Invoking command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/plansys2_lifecycle_manager
+[9.233s] -- Install configuration: ""
+[9.233s] -- Execute custom install script
+[9.235s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/include//plansys2_lifecycle_manager/lifecycle_manager.hpp
+[9.269s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/libplansys2_lifecycle_manager.a
+[9.293s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/lib/plansys2_lifecycle_manager/lifecycle_manager_node
+[9.312s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/library_path.sh
+[9.328s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/library_path.dsv
+[9.341s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/ament_index/resource_index/package_run_dependencies/plansys2_lifecycle_manager
+[9.355s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/ament_index/resource_index/parent_prefix_path/plansys2_lifecycle_manager
+[9.369s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/ament_prefix_path.sh
+[9.381s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/ament_prefix_path.dsv
+[9.395s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/path.sh
+[9.407s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/environment/path.dsv
+[9.420s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/local_setup.bash
+[9.433s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/local_setup.sh
+[9.446s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/local_setup.zsh
+[9.459s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/local_setup.dsv
+[9.473s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.dsv
+[9.486s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/ament_index/resource_index/packages/plansys2_lifecycle_manager
+[9.498s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.511s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/cmake/ament_cmake_export_libraries-extras.cmake
+[9.535s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.551s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/cmake/plansys2_lifecycle_managerConfig.cmake
+[9.562s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/cmake/plansys2_lifecycle_managerConfig-version.cmake
+[9.576s] -- Symlinking: /root/experimental_robotics/src/install/plansys2_lifecycle_manager/share/plansys2_lifecycle_manager/package.xml
+[9.604s] Invoked command in '/root/experimental_robotics/src/build/plansys2_lifecycle_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/experimental_robotics/install/ros2_aruco:/root/experimental_robotics/install/assignment_1:/root/experimental_robotics/install/Assignment_1:/opt/ros/foxy /usr/bin/cmake --install /root/experimental_robotics/src/build/plansys2_lifecycle_manager

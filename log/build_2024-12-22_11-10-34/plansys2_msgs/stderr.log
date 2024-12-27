@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py", line 40, in <module>
+    sys.exit(main())
+  File "/opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py", line 36, in main
+    return generate_py(args.generator_arguments_file, args.typesupport_impls.split(';'))
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_py/generate_py_impl.py", line 61, in generate_py
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse
+    return self._parse(text, start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 318, in parse
+    return forest_tree_visitor.visit(solutions[0])
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 281, in visit
+    return super(ForestToTreeVisitor, self).visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 218, in visit
+    else:                               next_node = vsni(current)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 287, in visit_symbol_node_in
+    if self.forest_sum_visitor and node.is_ambiguous and isinf(node.priority):
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 69, in is_ambiguous
+    return len(self.children) > 1
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 74, in children
+    return sorted(self._children, key=attrgetter('sort_key'))
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 125, in sort_key
+    return self.is_empty, -self.priority, self.rule.order
+KeyboardInterrupt
+make[2]: *** [plansys2_msgs__py/CMakeFiles/plansys2_msgs__py.dir/build.make:214: rosidl_generator_py/plansys2_msgs/_plansys2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:553: plansys2_msgs__py/CMakeFiles/plansys2_msgs__py.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt
