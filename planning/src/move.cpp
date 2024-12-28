@@ -18,7 +18,11 @@
 #include <string>
 #include <map>
 #include <algorithm>
-
+#include <string>
+#include <sstream>
+#include <map>
+#include <std_msgs/msg/string.hpp>
+#include <geometry_msgs/msg/point.hpp>
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "geometry_msgs/msg/pose.hpp"
 #include "geometry_msgs/msg/pose_with_covariance_stamped.hpp"
@@ -57,7 +61,7 @@ public:
     wp.pose.position.y = 2.0;
     waypoints_["w2"] = wp;
 
-    wp.pose.position.x = -7.0;
+    wp.pose.position.x =  7.0;
     wp.pose.position.y = -5.0;
     waypoints_["w3"] = wp;
 
@@ -70,6 +74,16 @@ public:
       "/amcl_pose",
       10,
       std::bind(&MoveAction::current_pos_callback, this, _1));
+      
+      
+      // Create publishers
+      /* map_publisher_ = this->create_publisher<std_msgs::msg::String>("map_topic", 10);
+      goal_position_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("goal_position_topic", 10);
+
+      // Initialize timer to publish data periodically
+      timer_ = this->create_wall_timer(
+	    std::chrono::seconds(1),
+	    std::bind(&MoveAction::do_work, this));*/
   }
 
   void current_pos_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg)
@@ -94,6 +108,10 @@ public:
   }
 
 private:
+
+
+
+
   double getDistance(const geometry_msgs::msg::Pose & pos1, const geometry_msgs::msg::Pose & pos2)
   {
     return sqrt(
@@ -137,11 +155,11 @@ private:
 
     dist_to_move = getDistance(goal_pos_.pose, current_pos_);
 
-	RCLCPP_INFO(get_logger(), "Current Position: (%.2f, %.2f)", current_pos_.position.x, current_pos_.position.y);
-	RCLCPP_INFO(get_logger(), "Goal Position: (%.2f, %.2f)", goal_pos_.pose.position.x, goal_pos_.pose.position.y);
-	RCLCPP_INFO(get_logger(), "Distance to Move: %.2f", dist_to_move);
-	RCLCPP_INFO(get_logger(), "goal position x:%.2f", goal_pos_.pose.position.x);
-	RCLCPP_INFO(get_logger(), "goal position y:%.2f", goal_pos_.pose.position.y);
+	//RCLCPP_INFO(get_logger(), "Current Position: (%.2f, %.2f)", current_pos_.position.x, current_pos_.position.y);
+	//RCLCPP_INFO(get_logger(), "Goal Position: (%.2f, %.2f)", goal_pos_.pose.position.x, goal_pos_.pose.position.y);
+	//RCLCPP_INFO(get_logger(), "Distance to Move: %.2f", dist_to_move);
+	//RCLCPP_INFO(get_logger(), "goal position x:%.2f", goal_pos_.pose.position.x);
+	//RCLCPP_INFO(get_logger(), "goal position y:%.2f", goal_pos_.pose.position.y);
     auto send_goal_options =
       rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
 
@@ -156,17 +174,43 @@ private:
           std::min(1.0, std::max(0.0, 1.0 - (feedback->distance_remaining / dist_to_move))),
           "Move running");
       };
+    /* std_msgs::msg::String current_goal_msg;
+    current_goal_msg.data = "{";
+    current_goal_msg.data += "\"x\": " + std::to_string(goal_pos_.pose.position.x) + ", ";
+    current_goal_msg.data += "\"y\": " + std::to_string(goal_pos_.pose.position.y) + ", ";
+    current_goal_msg.data += "\"z\": " + std::to_string(goal_pos_.pose.position.z) + "}";
+
+    current_goal_publisher_->publish(current_goal_msg);*/
 
     send_goal_options.result_callback = [this](auto) {
-    	 RCLCPP_INFO(get_logger(), "Current Position: (%.2f, %.2f)", current_pos_.position.x, current_pos_.position.y);
-        RCLCPP_INFO(get_logger(), "Goal Position: (%.2f, %.2f)", goal_pos_.pose.position.x, goal_pos_.pose.position.y);
+    	 //RCLCPP_INFO(get_logger(), "Current Position: (%.2f, %.2f)", current_pos_.position.x, current_pos_.position.y);
+        //RCLCPP_INFO(get_logger(), "Goal Position: (%.2f, %.2f)", goal_pos_.pose.position.x, goal_pos_.pose.position.y);
         RCLCPP_INFO(get_logger(), "Distance to Move: %.2f", dist_to_move);
         finish(true, 0.95, "Move completed");
       };
 
     future_navigation_goal_handle_ =
       navigation_action_client_->async_send_goal(navigation_goal_, send_goal_options);
+          
+    //publish_current_goal();
+
   }
+/*
+  void publish_current_goal()
+  {
+    if (!goal_pos_.pose.position.x && !goal_pos_.pose.position.y) {
+      return;  // Avoid publishing if no goal is set
+    }
+
+    std_msgs::msg::String current_goal_msg;
+    current_goal_msg.data = "{";
+    current_goal_msg.data += "\"x\": " + std::to_string(goal_pos_.pose.position.x) + ", ";
+    current_goal_msg.data += "\"y\": " + std::to_string(goal_pos_.pose.position.y) + ", ";
+    current_goal_msg.data += "\"z\": " + std::to_string(goal_pos_.pose.position.z) + "}";
+
+    current_goal_publisher_->publish(current_goal_msg);
+  }*/
+
 
   std::map<std::string, geometry_msgs::msg::PoseStamped> waypoints_;
 
@@ -183,6 +227,12 @@ private:
   geometry_msgs::msg::Pose current_pos_;
   geometry_msgs::msg::PoseStamped goal_pos_;
   nav2_msgs::action::NavigateToPose::Goal navigation_goal_;
+  
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr map_publisher_;
+  rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr goal_position_publisher_;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr current_goal_publisher_;
+  rclcpp::TimerBase::SharedPtr timer_;
+
 
   double dist_to_move;
 };
