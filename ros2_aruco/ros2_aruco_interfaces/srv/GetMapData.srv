@@ -1,0 +1,8 @@
+# Request
+---
+# Nessuna richiesta in questo caso. Può essere vuoto se non hai bisogno di dati specifici.
+# Può essere utile per servizi come "ottieni mappa"
+
+# Response
+std_msgs/String map_data
+

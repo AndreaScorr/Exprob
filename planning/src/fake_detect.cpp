@@ -1,15 +1,13 @@
+
 #include <memory>
 #include <algorithm>
-#include <iostream>
-#include <string>
 
 #include "plansys2_executor/ActionExecutorClient.hpp"
+
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
-#include "ros2_aruco_interfaces/srv/get_map_data.hpp"  // Include il tipo di servizio
 
 using namespace std::chrono_literals;
-using ros2_aruco_interfaces::srv::GetMapData;
 
 class Detect : public plansys2::ActionExecutorClient
 {
@@ -18,33 +16,11 @@ public:
   : plansys2::ActionExecutorClient("detect", 1s)
   {
     progress_ = 0.0;
-    
-    // Crea il client del servizio
-    client_ = this->create_client<GetMapData>("get_map_data");
   }
 
 private:
   void do_work()
   {
-    // Chiamata al servizio per ottenere i dati della mappa
-    if (client_->wait_for_service(1s)) {
-      auto request = std::make_shared<GetMapData::Request>();
-      auto future = client_->async_send_request(request);
-
-      // Gestiamo la risposta
-      try {
-        auto response = future.get();  // Attende la risposta dal servizio
-        //std::string map_data = response->map_data;  // Estrai i dati dalla risposta
-        std::string map_data = response->map_data.data;  // Estrai i dati dalla risposta
-
-        std::cout << "Received map data: " << map_data << std::endl;
-      } catch (const std::exception & e) {
-        std::cerr << "Failed to call service: " << e.what() << std::endl;
-      }
-    } else {
-      std::cout << "Service not available yet..." << std::endl;
-    }
-
     // Simulazione di un processo di rilevamento
     if (progress_ < 1.0) {
       progress_ += 0.05;  // Aumenta il progresso del 5% ad ogni chiamata
@@ -58,11 +34,11 @@ private:
 
     // Stampa il progresso a schermo
     std::cout << "\r\e[K" << std::flush;
-    std::cout << "Detecting ... [" << std::min(100.0, progress_ * 100.0) << "%]  " << std::flush;
+    std::cout << "Detecting ... [" << std::min(100.0, progress_ * 100.0) << "%]  " <<
+      std::flush;
   }
 
   float progress_;  // Variabile per tenere traccia del progresso dell'azione
-  rclcpp::Client<GetMapData>::SharedPtr client_;  // Client per il servizio GetMapData
 };
 
 int main(int argc, char ** argv)

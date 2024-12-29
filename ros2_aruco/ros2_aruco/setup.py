@@ -1,4 +1,5 @@
 from setuptools import setup
+from glob import glob
 
 package_name = 'ros2_aruco'
 
@@ -10,6 +11,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+	('share/' + package_name + '/srv', ['srv/GetMapData.srv']),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,7 +28,8 @@ setup(
             'aruco_node_red_circle =ros2_aruco.aruco_node_red_circle:main',
             'aruco_node_moving_robot = ros2_aruco.aruco_node_moving_robot:main',
             'moving_robot = ros2_aruco.moving_robot:main',
-            'aruco_node_moving_camera = ros2_aruco.aruco_node_moving_camera:main'
+            'aruco_node_moving_camera = ros2_aruco.aruco_node_moving_camera:main',
+            'detect_service_node = ros2_aruco.detect_service_node:main'
         ],
     },
 )
