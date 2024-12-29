@@ -5,48 +5,37 @@
 class DummyMapNode : public rclcpp::Node {
 public:
     DummyMapNode() : Node("dummy_map_node") {
-        publisher_ = this->create_publisher<std_msgs::msg::String>("map_topic", 10);
+        publisher_ = this->create_publisher<std_msgs::msg::String>("matrix_topic", 10);
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
-            std::bind(&DummyMapNode::publish_map, this)
+            std::bind(&DummyMapNode::publish_matrix, this)
         );
     }
 
 private:
-    void publish_map() {
-        // Crea una rappresentazione di dati simile a JSON
-        std::ostringstream json_stream;
-        json_stream << "{";
-        json_stream << "\"waypoints\": [";
+    void publish_matrix() {
+        // Crea una rappresentazione della matrice trasposta 4x3 come stringa
+        std::ostringstream matrix_stream;
 
-        // Aggiungi alcuni waypoint
-        add_waypoint(json_stream, "1", 1.0, 2.0, 3.0);
-        add_waypoint(json_stream, "2", 4.0, 5.0, 6.0);
-	 add_waypoint(json_stream, "3", 1.0, 2.0, 3.0);
-        add_waypoint(json_stream, "4", 4.0, 5.0, 6.0);
+        matrix_stream << "[\n";  // Iniziamo con l'apertura della matrice
 
-        json_stream << "]";
-        json_stream << "}";
+        // Aggiungi 4 righe di 3 elementi ciascuna (trasposta della matrice originale 3x4)
+        add_vector(matrix_stream, 0, 0, 0);
+        add_vector(matrix_stream, 0, 0, 0);
+        add_vector(matrix_stream, 0, 0, 0);
+        add_vector(matrix_stream, 0, 0, 0);
 
+        matrix_stream << "\n]";  // Chiusura della matrice
+
+        // Crea il messaggio e pubblichiamo la matrice come stringa
         auto message = std_msgs::msg::String();
-        message.data = json_stream.str();
+        message.data = matrix_stream.str();  // La matrice come stringa formattata
         RCLCPP_INFO(this->get_logger(), "Publishing: %s", message.data.c_str());
         publisher_->publish(message);
     }
 
-    void add_waypoint(std::ostringstream &json_stream, const std::string &name, double x, double y, double z) {
-        static bool first = true;
-        if (!first) {
-            json_stream << ",";
-        }
-        first = false;
-
-        json_stream << "{";
-        json_stream << "\"name\": \"" << name << "\", ";
-        json_stream << "\"x\": " << x << ", ";
-        json_stream << "\"y\": " << y << ", ";
-        json_stream << "\"z\": " << z;
-        json_stream << "}";
+    void add_vector(std::ostringstream &matrix_stream, double a, double b, double c) {
+        matrix_stream << "    [" << a << ", " << b << ", " << c << "],\n";  // Aggiungi ogni vettore
     }
 
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
