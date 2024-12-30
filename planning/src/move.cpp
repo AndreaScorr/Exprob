@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-/*
+
 #include <math.h>
 
 #include <memory>
@@ -41,7 +41,7 @@ public:
     wp.header.frame_id = "/map";
     wp.header.stamp = now();
     wp.pose.position.x = -7.0;
-    wp.pose.position.y = -1.5;
+    wp.pose.position.y = 1.5;
     wp.pose.position.z = 0.0;
     wp.pose.orientation.x = 0.0;
     wp.pose.orientation.y = 0.0;
@@ -156,7 +156,7 @@ private:
     	 RCLCPP_INFO(get_logger(), "Current Position: (%.2f, %.2f)", current_pos_.position.x, current_pos_.position.y);
         RCLCPP_INFO(get_logger(), "Goal Position: (%.2f, %.2f)", goal_pos_.pose.position.x, goal_pos_.pose.position.y);
         RCLCPP_INFO(get_logger(), "Distance to Move: %.2f", dist_to_move);
-        finish(true, 0.90, "Move completed");
+        finish(true,1.0, "Move completed");
       };
 
     future_navigation_goal_handle_ =
@@ -197,9 +197,9 @@ int main(int argc, char ** argv)
   return 0;
 }
 
-*/
 
 
+/*
 
 #include <memory>
 #include <algorithm>
@@ -257,6 +257,6 @@ int main(int argc, char ** argv)
 }
 
 
-
+*/
 
 
