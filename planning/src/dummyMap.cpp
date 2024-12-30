@@ -30,7 +30,7 @@ private:
         // Crea il messaggio e pubblichiamo la matrice come stringa
         auto message = std_msgs::msg::String();
         message.data = matrix_stream.str();  // La matrice come stringa formattata
-        RCLCPP_INFO(this->get_logger(), "Publishing: %s", message.data.c_str());
+        //RCLCPP_INFO(this->get_logger(), "Publishing: %s", message.data.c_str());
         publisher_->publish(message);
     }
 

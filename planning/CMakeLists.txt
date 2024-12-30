@@ -9,8 +9,7 @@ find_package(plansys2_msgs REQUIRED)
 find_package(plansys2_executor REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
-find_package(ros2_aruco_interfaces REQUIRED) 
-
+find_package(ros2_aruco_interfaces REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -22,7 +21,6 @@ set(dependencies
     geometry_msgs
     nav2_msgs
     ros2_aruco_interfaces
-
 )
 
 add_executable(move_node src/move.cpp)
@@ -34,19 +32,12 @@ ament_target_dependencies(detect_node ${dependencies})
 add_executable(move_in_order_node src/move_in_order.cpp)
 ament_target_dependencies(move_in_order_node ${dependencies})
 
-
-add_executable(dummy_map_node src/dummyMap.cpp)
-ament_target_dependencies(dummy_map_node ${dependencies})
-
 install(DIRECTORY launch pddl DESTINATION share/${PROJECT_NAME})
 
 install(TARGETS
   move_node
   detect_node
   move_in_order_node
-  dummy_map_node 
-  
-  
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}

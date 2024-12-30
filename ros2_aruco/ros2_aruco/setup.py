@@ -30,6 +30,7 @@ setup(
             'moving_robot = ros2_aruco.moving_robot:main',
             'aruco_node_moving_camera = ros2_aruco.aruco_node_moving_camera:main',
             'detect_service_node = ros2_aruco.detect_service_node:main'
+
         ],
     },
 )
